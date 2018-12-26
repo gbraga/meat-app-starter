@@ -56,7 +56,7 @@ export class OrderComponent implements OnInit {
       number: this.formBuilder.control('', [Validators.required, Validators.pattern(this.numberPattern)]),
       paymentOptions: this.formBuilder.control('', [Validators.required])
 
-    }, { validator: OrderComponent.equalsTo});
+    }, { validator: OrderComponent.equalsTo });
   }
 
   ngOnInit() {
